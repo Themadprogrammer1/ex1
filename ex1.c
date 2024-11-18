@@ -19,7 +19,7 @@ int main() {
   printf("Please enter a position:\n");
   scanf("%d", &position);
   bit = (number >> position) & 1;
-  printf("The bit in position %d of number %d is %d\n", position, number,  bit);
+  printf("The bit in position %d of number %d is: %d\n", position, number,  bit);
 
   // Set bit
   printf("\nSet bit:\n");
