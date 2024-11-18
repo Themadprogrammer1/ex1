@@ -28,6 +28,14 @@ int main() {
   Print the output
   Now make sure it's "off" (equal to 0)
   Print the output */
+  printf("Please enter a number:\n");
+  scanf("%d", &number);
+  printf("Please enter a position:\n");
+  scanf("%d", &position);
+  number = number | (1 << position);
+  printf("Number with bit %d set to 1: %d\n", position, number);
+  number = number & (~(1 << position));
+  printf("Number with bit %d set to 0: %d\n", position, number);
 
   // Toggle bit
   printf("\nToggle bit:\n");
